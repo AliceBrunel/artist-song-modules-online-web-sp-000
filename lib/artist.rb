@@ -4,23 +4,17 @@ require 'pry'
 class Artist
   
   extend Memorable
+  extend Findable
   
-  # The Artist class is responsible for creating artists instances
+  
   attr_accessor :name
   attr_reader :songs
 
   @@artists = []
 
-  # An Artist instance is stored in the @@artists class variable when initialized 
-  # It is initialized with an empty list of assert_nothing_raised
   def initialize
     @@artists << self
     @songs = []
-  end
-
-  # The Artist class method allow to find an Artist instance with a name 
-  def self.find_by_name(name)
-    @@artists.detect{|a| a.name == name}
   end
 
   def self.all
