@@ -3,6 +3,7 @@ require 'pry'
 
 class Artist
   
+  extend 
   
   # The Artist class is responsible for creating artists instances
   attr_accessor :name
