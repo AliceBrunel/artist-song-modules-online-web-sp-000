@@ -25,7 +25,7 @@ class Artist
   end
 
   def self.reset_all
-    extend
+    self.all.clear
   end
 
   def self.count
