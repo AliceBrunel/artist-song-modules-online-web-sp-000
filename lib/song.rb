@@ -24,7 +24,7 @@ class Song
   end
 
   def self.count
-    extend
+    self.all.count
   end
 
   def artist=(artist)
