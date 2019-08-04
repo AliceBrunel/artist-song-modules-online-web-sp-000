@@ -2,6 +2,8 @@
 require 'pry'
 
 class Artist
+  
+  
   # The Artist class is responsible for creating artists instances
   attr_accessor :name
   attr_reader :songs
