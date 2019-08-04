@@ -29,7 +29,7 @@ class Artist
   end
 
   def self.count
-    self.all.count
+    extend
   end
 
   def add_song(song)
